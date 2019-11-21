@@ -7,11 +7,13 @@ use Auth;
 
 class SessionsController extends Controller
 {
+    //显示登录页面视图
     public function create()
     {
         return view('sessions.create');
     }
 
+    //登录
     public function store(Request $request)
     {
         //验证数据是否符合规则
@@ -21,7 +23,7 @@ class SessionsController extends Controller
         ]);
 
         //如果数据存在数据库中
-        if (Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials, $request->has('remember'))) {
             session()->flash('success', '欢迎回来');
             return redirect()->route('users.show', [Auth::user()]);
         } else {
@@ -29,9 +31,9 @@ class SessionsController extends Controller
             return redirect()->back()->withInput();
 
         }
-        return;
     }
 
+    //退出
     public function destroy()
     {
         Auth::logout();

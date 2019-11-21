@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="45c24079-14a3-4088-a2b4-a07d7c52b88f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SessionsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SessionsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/sessions/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/sessions/create.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +154,7 @@
       <workItem from="1574077719453" duration="7583000" />
       <workItem from="1574167255041" duration="8487000" />
       <workItem from="1574250144849" duration="1429000" />
-      <workItem from="1574337179881" duration="8046000" />
+      <workItem from="1574337179881" duration="8320000" />
     </task>
     <servers />
   </component>
