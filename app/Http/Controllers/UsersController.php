@@ -36,6 +36,8 @@ class UsersController extends Controller
             'password' => bcrypt($request->password)
         ]);
 
+        Auth::login($user);
+
         session()->flash('success', '欢迎欢迎');
 
         //用户创建完后重定向到个人信息页面，并把新建的用户信息传入视图
