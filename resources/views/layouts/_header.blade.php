@@ -3,7 +3,7 @@
         <a class="navbar-brand" href="{{route('home')}}">electric</a>
         <ul class="navbar-nav justify-content-end">
             @if(Auth::check())
-                <li class="nav-item"><a href="#" class="nav-link">用户列表</a></li>
+                <li class="nav-item"><a href="{{route('users.index')}}" class="nav-link">用户列表</a></li>
                 <li class="nav-item dropdown">
                     <a
                         href="#"
